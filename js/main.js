@@ -100,327 +100,1305 @@ function update() {
   var selectedBmi = bmi.options[bmi.selectedIndex].value;
   var medicine = document.getElementById("providedMedic");
   var medic = medicine.options[medicine.selectedIndex].value;
+  let food = document.getElementById("food");
+  let typeOfFood = food.options[food.selectedIndex].value;
+  let exercise = document.getElementById("exercise");
+  let doesExercise = exercise.options[exercise.selectedIndex].value;
 
-  if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "1" &&
-    waist === "1" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "10%";
-    updateProgressBar(10);
+  if (typeOfFood === "1" && doesExercise === "1") {
+    if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "10%";
+      updateProgressBar(10);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "20%";
+      updateProgressBar(20);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "22%";
+      updateProgressBar(22);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "70%";
+      updateProgressBar(70);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "35%";
+      updateProgressBar(35);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "47%";
+      updateProgressBar(47);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "23%";
+      updateProgressBar(23);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "39%";
+      updateProgressBar(39);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "34%";
+      updateProgressBar(34);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "29%";
+      updateProgressBar(29);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "24%";
+      updateProgressBar(24);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "43%";
+      updateProgressBar(43);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21%";
+      updateProgressBar(21);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "62%";
+      updateProgressBar(62);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "35%";
+      updateProgressBar(35);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "51%";
+      updateProgressBar(51);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "36%";
+      updateProgressBar(36);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21%";
+      updateProgressBar(21);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "39%";
+      updateProgressBar(39);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "40%";
+      updateProgressBar(40);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "53.5%";
+      updateProgressBar(53.5);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "15%";
+      updateProgressBar(15);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "58%";
+      updateProgressBar(58);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "50%";
+      updateProgressBar(50);
+    } else if (
+      selectedGender === "Female" &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "29%";
+      updateProgressBar(29);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "61%";
+      updateProgressBar(61);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21.5%";
+      updateProgressBar(21.5);
+    }
+  } else if (typeOfFood === "1" && doesExercise === "2") {
+    if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "12%";
+      updateProgressBar(12);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "20%";
+      updateProgressBar(22);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "24%";
+      updateProgressBar(24);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "35%";
+      updateProgressBar(35);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "47%";
+      updateProgressBar(47);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "23%";
+      updateProgressBar(23);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "39%";
+      updateProgressBar(39);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "34%";
+      updateProgressBar(34);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "29%";
+      updateProgressBar(29);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "24%";
+      updateProgressBar(24);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "43%";
+      updateProgressBar(43);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21%";
+      updateProgressBar(21);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "62%";
+      updateProgressBar(62);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "35%";
+      updateProgressBar(35);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "51%";
+      updateProgressBar(51);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "36%";
+      updateProgressBar(36);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21%";
+      updateProgressBar(21);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "39%";
+      updateProgressBar(39);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "40%";
+      updateProgressBar(40);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "53.5%";
+      updateProgressBar(53.5);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "15%";
+      updateProgressBar(15);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "58%";
+      updateProgressBar(58);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "50%";
+      updateProgressBar(50);
+    } else if (
+      selectedGender === "Female" &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "29%";
+      updateProgressBar(29);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "61%";
+      updateProgressBar(61);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21.5%";
+      updateProgressBar(21.5);
+    }
   } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "1" &&
-    waist === "1" &&
-    medic === "1"
+    (typeOfFood === "2" || typeOfFood === "4") &&
+    (doesExercise === "1" || doesExercise === "2")
   ) {
-    riskScore.textContent = "20%";
-    updateProgressBar(20);
+    if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "8%";
+      updateProgressBar(8);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "12%";
+      updateProgressBar(12);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "18%";
+      updateProgressBar(18);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "65%";
+      updateProgressBar(65);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "24%";
+      updateProgressBar(24);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "15%";
+      updateProgressBar(15);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "11%";
+      updateProgressBar(11);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "40%";
+      updateProgressBar(40);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "20%";
+      updateProgressBar(20);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "33%";
+      updateProgressBar(33);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "31%";
+      updateProgressBar(31);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "34%";
+      updateProgressBar(34);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "25.6%";
+      updateProgressBar(25.6);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "23%";
+      updateProgressBar(23);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "36.7%";
+      updateProgressBar(36.7);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "18.5%";
+      updateProgressBar(18.5);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "54%";
+      updateProgressBar(54);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "31%";
+      updateProgressBar(31);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "51%";
+      updateProgressBar(51);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "36%";
+      updateProgressBar(36);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21%";
+      updateProgressBar(21);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "39%";
+      updateProgressBar(39);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "40%";
+      updateProgressBar(40);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "53.5%";
+      updateProgressBar(53.5);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "15%";
+      updateProgressBar(15);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "58%";
+      updateProgressBar(58);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "50%";
+      updateProgressBar(50);
+    } else if (
+      selectedGender === "Female" &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "29%";
+      updateProgressBar(29);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "61%";
+      updateProgressBar(61);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21.5%";
+      updateProgressBar(21.5);
+    }
   } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "1" &&
-    waist === "1" &&
-    medic === "1"
+    typeOfFood === "3" &&
+    (doesExercise === "1" || doesExercise === "2")
   ) {
-    riskScore.textContent = "22%";
-    updateProgressBar(22);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "2" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "70%";
-    updateProgressBar(70);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "1" &&
-    waist === "1" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "35%";
-    updateProgressBar(35);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "4" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "28%";
-    updateProgressBar(28);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "4" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "19%";
-    updateProgressBar(19);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "2" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "19%";
-    updateProgressBar(19);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "1" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "47%";
-    updateProgressBar(47);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "1" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "23%";
-    updateProgressBar(23);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "2" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "42%";
-    updateProgressBar(42);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "2" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "39%";
-    updateProgressBar(39);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "4" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "34%";
-    updateProgressBar(34);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "4" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "19%";
-    updateProgressBar(19);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "1" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "29%";
-    updateProgressBar(29);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "1" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "24%";
-    updateProgressBar(24);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "2" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "43%";
-    updateProgressBar(43);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "2" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "21%";
-    updateProgressBar(21);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "3" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "62%";
-    updateProgressBar(62);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "3" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "35%";
-    updateProgressBar(35);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "4" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "28%";
-    updateProgressBar(28);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "4" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "51%";
-    updateProgressBar(51);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "4" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "46%";
-    updateProgressBar(46);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "4" &&
-    waist === "4" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "36%";
-    updateProgressBar(36);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "1" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "71%";
-    updateProgressBar(71);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "1" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "21%";
-    updateProgressBar(21);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "2" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "39%";
-    updateProgressBar(39);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "2" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "71%";
-    updateProgressBar(71);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "3" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "40%";
-    updateProgressBar(40);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "3" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "42%";
-    updateProgressBar(42);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "4" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "46%";
-    updateProgressBar(46);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "2" &&
-    waist === "4" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "53.5%";
-    updateProgressBar(53.5);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "1" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "15%";
-    updateProgressBar(15);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "1" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "28%";
-    updateProgressBar(28);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "2" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "58%";
-    updateProgressBar(58);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "2" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "50%";
-    updateProgressBar(50);
-  } else if (
-    selectedGender === "Female" &&
-    selectedBmi === "3" &&
-    waist === "3" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "42%";
-    updateProgressBar(42);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "3" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "29%";
-    updateProgressBar(29);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "4" &&
-    medic === "1"
-  ) {
-    riskScore.textContent = "61%";
-    updateProgressBar(61);
-  } else if (
-    (selectedGender === "Female" || selectedGender === "Male") &&
-    selectedBmi === "3" &&
-    waist === "4" &&
-    medic === "2"
-  ) {
-    riskScore.textContent = "21.5%";
-    updateProgressBar(21.5);
+    if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "8%";
+      updateProgressBar(8);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "12%";
+      updateProgressBar(12);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "18%";
+      updateProgressBar(18);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "65%";
+      updateProgressBar(65);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "1" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "24%";
+      updateProgressBar(24);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "15%";
+      updateProgressBar(15);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "11%";
+      updateProgressBar(11);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "40%";
+      updateProgressBar(40);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "20%";
+      updateProgressBar(20);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "33%";
+      updateProgressBar(33);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "31%";
+      updateProgressBar(31);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "34%";
+      updateProgressBar(34);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "19%";
+      updateProgressBar(19);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "25.6%";
+      updateProgressBar(25.6);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "23%";
+      updateProgressBar(23);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "36.7%";
+      updateProgressBar(36.7);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "18.5%";
+      updateProgressBar(18.5);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "54%";
+      updateProgressBar(54);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "31%";
+      updateProgressBar(31);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "51%";
+      updateProgressBar(51);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "4" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "36%";
+      updateProgressBar(36);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21%";
+      updateProgressBar(21);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "39%";
+      updateProgressBar(39);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "71%";
+      updateProgressBar(71);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "40%";
+      updateProgressBar(40);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "46%";
+      updateProgressBar(46);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "2" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "53.5%";
+      updateProgressBar(53.5);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "15%";
+      updateProgressBar(15);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "1" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "28%";
+      updateProgressBar(28);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "58%";
+      updateProgressBar(58);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "2" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "50%";
+      updateProgressBar(50);
+    } else if (
+      selectedGender === "Female" &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "42%";
+      updateProgressBar(42);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "3" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "29%";
+      updateProgressBar(29);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "1"
+    ) {
+      riskScore.textContent = "61%";
+      updateProgressBar(61);
+    } else if (
+      (selectedGender === "Female" || selectedGender === "Male") &&
+      selectedBmi === "3" &&
+      waist === "4" &&
+      medic === "2"
+    ) {
+      riskScore.textContent = "21.5%";
+      updateProgressBar(21.5);
+    }
   }
 }
 // function checkDiabetesStatus() {
