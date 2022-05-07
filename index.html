@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diabetes Checker</title>
+  <script src="./js/main.js" defer></script>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+  <section class="root">
+    <div class="container">
+      <div class="header">
+        <h1 class="title">Diabetes Risk Checker</h1>
+      </div>
+      <div class="body">
+        <h2 class="body-title">What is Diabetes</h2>
+        <p>
+          Diabetes is a chronic (long-lasting) health condition that affects how your
+          body turns food into energy.
+          <a href="https://www.cdc.gov/diabetes/basics/diabetes.html" target="_blank">Read More</a>
+        </p>
+
+        <h2 class="body-title">Types of Diabetes</h2>
+        <p>There are three main types of diabetes: type 1, type 2, and gestational
+          diabetes (diabetes while pregnant). <a href="https://www.cdc.gov/diabetes/basics/diabetes.html"
+            target="_blank">Read More</a></p>
+        <h2 class="body-title">Prediabetes</h2>
+        <p>Prediabetes means you have blood glucose, or blood sugar, levels that are higher than normal but not high
+          enough to be called diabetes <a href="https://health.ghanaguardian.com/topic-details/398/prediabetes"
+            target="_blank">Read More</a></p>
+        <h2 class="body-title">Diabetes Complications</h2>
+        <p>Diabetes complications often share the same risk factors, and one complication can make other complications
+          worse. For example, many people with diabetes also have high blood pressure. <a
+            href="https://www.cdc.gov/diabetes/library/features/prevent-complications.html" target="_blank">Read More</a></p>
+        <h2 class="body-title">Prevention</h2>
+        <p>Even though diabetes can lead to other health problems, you can prevent or delay these complications in many ways. <a href="https://www.cdc.gov/diabetes/managing/problems.html" target="_blank">Read More</a> </p>
+
+        <button id="modalBtn" class="btn">Start</button>
+        <div id="modal" class="simpleModal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="closeBtn" id="closeBtn">&times;</span>
+              <h3 class="header-title">Answer a few questions</h3>
+            </div>
+            <div class="modal-body">
+              <!-- <p class="modal-questions">
+                  Question <span id="questionNumber">1</span> of 7
+                </p>
+                <div class="questions">
+                  <p id="question">What is your gender?</p>
+                  <div class="quest">
+                    <input type="radio" class="radio" name="" id="quest1Male" />
+                    <label for="quest1Male">Male</label>
+                  </div>
+                  <div class="quest">
+                    <input
+                      type="radio"
+                      class="radio"
+                      name=""
+                      id="quest2Female"
+                    />
+                    <label for="quest2Female">Female</label>
+                  </div> -->
+
+              <!-- Implementing a different method -->
+              <div class="questions">
+                <div class="question">
+                  <p>What is your gender?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="gender" onchange="update()">
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+              
+                    </select>
+                  </div>
+                </div>
+                <div class="question">
+                  <p>How old are you?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="age" onchange="update()">
+                      <option value="1">49 or younger</option>
+                      <option value="2">50 to 59</option>
+                      <option value="3">60 to 69</option>
+                      <option value="4">70 or older</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="question">
+                  <p>What is your ethnic background?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="ethnicGroup" onchange="update()">
+                      <option value="1">White European</option>
+                      <option value="2">Other ethnic group</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="question">
+                  <p>Do you have a father, mother, brother, sister or own child with diabetes?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="inherited" onchange="update()">
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="question">
+                  <p>What is your waist size?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="waistSize" onchange="update()">
+                      <option value="1">Less than 90cm(35.3 inches)</option>
+                      <option value="2">90 to 99.cm(35.4 to 39.3 inches)</option>
+                      <option value="3">100 to 109.9cm(39.4 to 42.9 inches)</option>
+                      <option value="4">110cm(43 inches) or more</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="question">
+                  <p>What is your BMI(body mass index) score?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="bmi" onchange="update()">
+                      <option value="1">Less than 25</option>
+                      <option value="2">25 to 29.9</option>
+                      <option value="3">30 to 34.9</option>
+                      <option value="4">35 or above</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="question">
+                  <p>Have you been given medicine for high blood pressure or told by a doctor that you have a high blood
+                    pressure?</p>
+                  <div class="select" style="width:200px;">
+                    <select id="providedMedic" onchange="update()">
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <!-- <button type="submit" id="next" class="next btn">
+                        Next
+                      </button> -->
+                  <button type="submit" id="finish" class="next finish btn">
+                    Check
+                  </button>
+                  <!-- <button type="submit" id="clear" class="clear btn">
+                        Clear
+                      </button> -->
+                </div>
+                <p class="risk">Your Risk Score is: <span id="riskScore"></span></p>
+                <div class="progress" id="progress"> 
+                  <div id="download" class="progress__bar"></div>
+                </div>
+                <div class="auto">Result is Generated Automatically as you select the options.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>
